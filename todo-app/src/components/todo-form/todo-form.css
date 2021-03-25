@@ -1,0 +1,68 @@
+.add-todo-form__submit,
+.add-todo-form__reset {
+  width: 100%;
+  margin-top: 5px;
+}
+.add-todo-form__input {
+  margin-bottom: 10px;
+}
+
+.todo-modal-button {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.todo-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+  z-index: 999;
+}
+
+.todo-modal--show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.todo-modal__content {
+  width: 550px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.todo-modal__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 575px) {
+  .todo-modal__content {
+    width: 96%;
+  }
+  .todo-modal h3 {
+    font-size: 19px;
+  }
+  .todo-modal__close {
+    right: 5px;
+    top: 5px;
+  }
+}

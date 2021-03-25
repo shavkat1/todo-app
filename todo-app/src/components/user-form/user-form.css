@@ -1,0 +1,17 @@
+.user-form {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: white;
+  margin: 25px auto;
+  width: 550px;
+}
+
+.user-form__input {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .user-form {
+    width: 100%;
+  }
+}
